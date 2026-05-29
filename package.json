@@ -1,0 +1,12 @@
+{
+  "name": "git-hook-b179a6",
+  "version": "1.0.0",
+  "description": "A git hook utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["git-hook", "utility"],
+  "license": "MIT"
+}
