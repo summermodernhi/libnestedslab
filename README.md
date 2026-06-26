@@ -1,4 +1,4 @@
-# git-hook-b179a6
+# git-hook-87dc7b
 
 A Node.js git hook utility.
 

